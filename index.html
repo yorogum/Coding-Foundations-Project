@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen Homepage</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS-файла -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header>
+        <nav class="navbar">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="imagenes/logo/codepen-wordmark-display-inside-white@10x.png" alt="CodePen Logo"> <!-- Логотип CodePen -->
+            </div>
+            
+            <!-- Блок с EXPLORE и ссылками навигации -->
+            <div class="nav-explore">
+                <span class="explore-text">EXPLORE</span> <!-- Текст "EXPLORE" -->
+                <ul class="nav-links"> <!-- Список навигационных ссылок -->
+                    <li><a href="#" class="bold-text">Pens</a></li> <!-- Ссылка на Pens -->
+                    <li><a href="#" class="bold-text">Projects</a></li> <!-- Ссылка на Projects -->
+                    <li><a href="#" class="bold-text">Posts</a></li> <!-- Ссылка на Posts -->
+                    <li><a href="#" class="bold-text">Collections</a></li> <!-- Ссылка на Collections -->
+                    <li><a href="#" class="grey-text">Spark ▼</a></li> <!-- Ссылка на Spark (серая) -->
+                </ul>
+            </div>
+
+            <!-- Кнопки поиска и авторизации -->
+            <div class="auth-buttons">
+                <button class="create">Create</button> <!-- Кнопка Create с иконкой стрелки -->
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Кнопка поиска с иконкой -->
+                <button class="login">Log In</button> <!-- Кнопка входа -->
+                <button class="signup">Sign Up</button> <!-- Кнопка регистрации -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="content-wrapper">
+            <!-- Текстовый блок -->
+            <div class="main-content">
+                <h1>CodePen is a <span class="highlight">social development environment</span> for front-end designers and developers.</h1> <!-- Заголовок -->
+                <p>It's the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p> <!-- Описание -->
+                <!-- Кнопки действий -->
+                <button class="signup-button">Sign Up for Free</button>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <!-- Скриншот с заголовком -->
+            <aside class="screenshot">
+                <p class="screenshot-title">
+                    This is <span class="title">CodePen Projects!</span>
+                </p> <!-- Заголовок скриншота -->
+                <img src="imagenes/image_2024-11-15_15-20-36.png" alt="CodePen Project Screenshot"> <!-- Изображение скриншота -->
+            </aside>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">CodePen for <span class="teams">TEAMS</span></a> <!-- Ссылка для Teams -->
+            <a href="#">CodePen for <span class="education">EDUCATION</span></a> <!-- Ссылка для Education -->
+            <a href="#">CodePen for <span class="privacy">PRIVACY</span></a> <!-- Ссылка для Privacy -->
+            <a href="#">CodePen for <span class="writing">WRITING</span></a> <!-- Ссылка для Writing -->
+        </div>
+    </footer>
+</body>
+</html>
