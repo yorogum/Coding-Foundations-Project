@@ -1,0 +1,238 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Убираем отступы и добавляем box-sizing */
+}
+
+body {
+    font-family: "Montserrat", sans-serif; /* Шрифт для всего тела */
+    background-color: #2b2b2b; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 18px; /* Увеличиваем размер шрифта для всего текста */
+}
+
+/* Навигационная панель */
+.navbar {
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    justify-content: space-between; /* Расстояние между логотипом и кнопками */
+    padding: 30px; /* Отступы вокруг содержимого */
+    background-color: rgb(14, 14, 14); /* Темный фон панели */
+}
+
+/* Логотип */
+.logo img {
+    width: 200px; /* Устанавливаем ширину изображения логотипа */
+}
+
+/* Блок с EXPLORE и ссылками */
+.nav-explore {
+    text-align: left; /* Выравнивание текста слева */
+}
+
+/* Стили для текста EXPLORE */
+.explore-text {
+    color: #FFD700; /* Желтый цвет */
+    margin-right: 20px; /* Отступ справа */
+    font-size: 18px;
+}
+
+/* Ссылки навигации */
+.nav-links {
+    display: flex; /* Используем flexbox для выравнивания ссылок */
+    gap: 30px; /* Расстояние между ссылками */
+    list-style: none; /* Убираем маркеры списка */
+    margin-top: 8px;
+}
+
+/* Выделение жирным Pens, Projects, Posts, Collections */
+.bold-text {
+     /* Жирный шрифт */
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 20px;
+}
+
+/* Серый цвет для Spark */
+.grey-text {
+    color: #7f8c8d; /* Серый цвет */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 20px;
+}
+
+/* Стили для кнопок поиска, Create, Log In и Sign Up */
+.auth-buttons {
+    display: flex; /* Используем flexbox для кнопок */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+.create {
+    background-color: rgb(63, 63, 63); /* Фон кнопки Create */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 20px 20px; /* Отступы внутри кнопки */
+    margin-right: 20px; /* Отступ справа */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    position: relative;
+    border-radius: 3px; /* Закругление углов кнопок */
+    font-size: 20px;
+}
+
+.create::after {
+    content: '▼'; /* Стрелка вниз */
+    color: rgb(82, 173, 46); /* Зеленый цвет стрелки */
+    margin-left: 5px; /* Отступ слева */
+}
+
+.search {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Без рамки */
+    color: #7f8c8d; /* Серый цвет иконки поиска */
+    font-size: 30px; /* Размер шрифта иконки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    margin-right: 20px; /* Отступ справа */
+}
+
+.login {
+    background-color: rgb(63, 63, 63); /* Зеленый фон кнопки Log In */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 20px 20px; /* Отступы внутри кнопки */
+    margin-right: 10px; /* Отступ справа */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 3px; /* Закругление углов кнопок */
+    font-size: 20px;
+}
+
+.signup {
+    background-color: rgb(63, 63, 63); /* Фон кнопки Sign Up */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 20px 20px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 3px; /* Закругление углов кнопок */
+    font-size: 20px;
+}
+
+/* Основной контейнер для контента */
+.content-wrapper {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Расстояние между элементами */
+    align-items: flex-start; /* Выравнивание элементов сверху */
+    padding: 40px 0px; /* Отступы вокруг содержимого */
+    max-width: 1300px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование контейнера */
+    text-align: left; /* Выравнивание текста слева */
+}
+
+/* Стили для текстового блока */
+.main-content {
+    max-width: 50%; /* Ограничение ширины блока */
+    padding-right: 20px; /* Отступ справа, чтобы текст не сливался с картинкой */
+}
+
+/* Увеличение размера текста заголовка */
+.main-content h1 {
+    color: #c7d7d8;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 40px; /* Увеличенный размер текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.highlight{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.main-content p {
+    color: #c7d7d8;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 30px; /* Увеличенный размер текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Кнопки действия */
+.signup-button {
+    background-color: rgb(82, 173, 46); /* Фон кнопки */
+    color: rgb(0, 0, 0); /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 20px 20px; /* Отступы внутри кнопки */
+    margin-right: 10px; /* Отступ справа */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 3px; /* Закругление углов кнопок */
+    font-size: 30px;
+}
+
+.learn-more {
+    background-color: rgb(14, 14, 14); /* Фон кнопки */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 20px 20px; /* Отступы внутри кнопки */
+    margin-right: 10px; /* Отступ справа */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 3px; /* Закругление углов кнопок */
+    font-size: 28px;
+}
+
+/* Стили для бокового скриншота */
+.screenshot {
+    max-width: 50%; /* Ограничиваем максимальную ширину */
+    text-align: left; /* Выравнивание текста слева */
+    box-shadow: -25px 4px 177px -5px rgba(0,0,0,0.74); /* Добавляем тень */
+}
+
+.screenshot-title {
+    color: #ffffff; /* Белый цвет текста */
+    font-size: 18px; /* Размер текста */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.title {
+    color: rgb(60, 233, 245);
+}
+
+.screenshot img {
+    width: 100%; /* Растягиваем изображение по ширине */
+    max-width: 500px; /* Ограничиваем максимальную ширину изображения */
+}
+
+/* Футер */
+footer {
+    background-color: #1e1e1e; /* Темный фон футера */
+    padding: 20px; /* Отступы вокруг содержимого футера */
+    margin-top: 40px; /* Отступ сверху футера */
+    border: 0.5px solid rgb(141, 141, 141); /* Зеленая рамка вокруг ссылок */
+    border-radius: 2px; /* Закругляем углы рамки */
+}
+
+.footer-links {
+    display: flex; /* Используем Flexbox для выравнивания ссылок */
+    justify-content: center; /* Центрируем ссылки по горизонтали */
+    gap: 0; /* Убираем gap, так как разделители будут сделаны через границы */
+}
+
+.teams, .education, .privacy, .writing {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.footer-links a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    text-align: center; /* Центрируем текст внутри каждой ссылки */
+    padding: 10px 20px; /* Отступы внутри ссылок */
+    position: relative; /* Чтобы можно было добавлять границы */
+}
+
+/* Разделители между ссылками */
+.footer-links a:not(:last-child) {
+    border-right: 0.5px solid white; /* Видимая белая вертикальная линия между ссылками */
+}
